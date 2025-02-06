@@ -1,16 +1,13 @@
 /*   STEP 1   */
-export const leagueID = "1126672589084028928"; // your league ID
-export const leagueName = "ShaDynasty 2025"; // your league name
-export const dues = 50; // (optional) used in template constitution page
+export const leagueID = "1048305664424099840"; // your league ID
+export const leagueName = "Sam's Club"; // your league name
+export const dues = 20; // (optional) used in template constitution page
 export const dynasty = true; // true for dynasty leagues, false for redraft and keeper
-export const enableBlog = true; // requires VITE_CONTENTFUL_ACCESS_TOKEN and VITE_CONTENTFUL_SPACE environment variables
+export const enableBlog = false; // requires VITE_CONTENTFUL_ACCESS_TOKEN and VITE_CONTENTFUL_SPACE environment variables
 
 /*   STEP 2   */
 export const homepageText = `
-  <p>In 2024, a small group of friends banded together trying to keep their younger brother, Cooper, out of trouble. They got him a job as a fantasty football manager, and he loved it! It was a shit job of course, mopping up bottomfeeders from the waiver wire and fielding Caleb Williams and Aaron Rodgers as starters each week. It stunk. But at least he had that sweet <s>music</s> Ja'Marr to keep him going. Boy, it was the cat's meow. That was <b>ShaDynasty</b>. </p>
-  <p>Ok so... The love of your life is a <s>black woman</s> Fantasy League named ShaDynasty? Yeah, what's wrong with that? It's strange, just unexpected, go on though. All right; <i>ShaDynasty</i>. Each year, the managers compete to win the ShaDynasty Cup and avoid the ever-humiliating Toilet Bowl.</p>
-  <p>Some managers built immediate win-now teams, while others opted to begin the slow process of building a juggernaut dynasty team. A portion of the league prioritized youth and draft picks, the rest gravitated towards the steadfast value of veterans. While some managers fled from injuries, others bought the dip and built for the future.</p>
-  <p>While the ultimate prize is bragging rights and sending obnoxious texts to the rest of the league for the next year, the champion manager also walks away with $400.</p>
+  <p>Welcome to Sam's Club</p>
 `;
 
 /*   STEP 3   */
@@ -26,7 +23,7 @@ export const managers = [
   // TUCKER 
   {
        "roster": 1,  // ID of the roster that the manager manages (look at the order of the power rankings graph)
-      "managerID": "991792875761405952",
+      "managerID": "null",
       "name": "Tucker",
        "tookOver": null, // (optional) used if a manager took over a team, delete this line or change to null otherwise
        "location": "Balt-ganistan, MD", // (optional)
@@ -51,7 +48,7 @@ export const managers = [
     // Cooper
   {
        "roster": 2,  // ID of the roster that the manager manages (look at the order of the power rankings graph)
-       "managerID": "1127631102816014336",
+       "managerID": "null",
        "name": "Cooper",
        "tookOver": null, // (optional) used if a manager took over a team, delete this line or change to null otherwise
        "location": "Syracuse, NY", // (optional)
@@ -77,7 +74,7 @@ export const managers = [
   {
        "roster": 3,  // ID of the roster that the manager manages (look at the order of the power rankings graph)
        "name": "Ross",
-       "managerID": "460593375200931840",
+       "managerID": "null",
        "tookOver": null, // (optional) used if a manager took over a team, delete this line or change to null otherwise
        "location": "East Rutherford, NJ", // (optional)
        "bio": "You know, Quasimodo predicted all of this.",
@@ -102,7 +99,7 @@ export const managers = [
   {
        "roster": 4,  // ID of the roster that the manager manages (look at the order of the power rankings graph)
        "name": "Nick",
-       "managerID": "854460602586861568",  
+       "managerID": "null",  
        "tookOver": null, // (optional) used if a manager took over a team, delete this line or change to null otherwise
        "location": "West Rutherford, NJ", // (optional)
        "bio": "Champion of ShaDynasty's Inaugural season",
@@ -126,7 +123,7 @@ export const managers = [
     // SAM
   {
        "roster": 5,  // ID of the roster that the manager manages (look at the order of the power rankings graph)
-       "managerID": "1004145098680057856",   
+       "managerID": "null",   
        "name": "Sam",
        "tookOver": null, // (optional) used if a manager took over a team, delete this line or change to null otherwise
        "location": "Greenville, SC", // (optional)
@@ -151,7 +148,7 @@ export const managers = [
     // Puleo
   {
        "roster": 6,  // ID of the roster that the manager manages (look at the order of the power rankings graph)
-       "managerID": "1003748560732516352",   
+       "managerID": "null",   
        "name": "Ryan",
        "tookOver": null, // (optional) used if a manager took over a team, delete this line or change to null otherwise
        "location": "Washington, DC", // (optional)
@@ -176,7 +173,7 @@ export const managers = [
     // MATT 
   {
        "roster": 7,  // ID of the roster that the manager manages (look at the order of the power rankings graph)
-       "managerID": "1002755516885610496",  
+       "managerID": "null",  
        "name": "Matt",
        "tookOver": null, // (optional) used if a manager took over a team, delete this line or change to null otherwise
        "location": "Chi-Raq, IL", // (optional)
@@ -201,7 +198,7 @@ export const managers = [
     // AJ
   {
        "roster": 8,  // ID of the roster that the manager manages (look at the order of the power rankings graph)
-       "managerID": "1004454040773730304", 
+       "managerID": "null", 
        "name": "AJ",
        "tookOver": null, // (optional) used if a manager took over a team, delete this line or change to null otherwise
        "location": "Miami, FL", // (optional)
@@ -214,56 +211,6 @@ export const managers = [
          name: "Kyyyyyyyle", // Can be anything (usually your rival's name)
          link: 8, // manager array number within this array, or null to link back to all managers page
          image: "/managers/File 67.jpeg", // either a specific manager photo or '/managers/everyone.png' or '/managers/question.png'
-       },
-       "favoritePlayer": 4805, // (optional) this corresponds to the Sleeper player ID (https://api.sleeper.app/v1/players/nfl)
-       "valuePosition": "WR", // (optional) Favorite position (QB, WR, RB, TE, etc.)
-       "rookieOrVets": "Rookies", // (optional) 'Rookies' or 'Vets' (anything else and you will need to add a new png to /static/ similar to the 'Rookies.png' and 'Vets.png' currently in there)
-       "philosophy": "Your fantasy team's philosophy",
-       "tradingScale": 10, // 1 - 10
-       "preferredContact": "Text", // 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
-     },
-
-    // KYLE 
-  {
-       "roster": 9,  // ID of the roster that the manager manages (look at the order of the power rankings graph)
-       "managerID": "1002381518435717120", 
-       "name": "Kyle",
-       "tookOver": null, // (optional) used if a manager took over a team, delete this line or change to null otherwise
-       "location": "Weehauken, NJ", // (optional)
-       "bio": "Lorem ipsum...",
-       "photo": "/managers/File 71.jpeg", // square ratio recommended (no larger than 500x500)
-       "fantasyStart": 2015, // (optional) when did the manager start playing fantasy football
-       "favoriteTeam": "phi", // (optional) favorite NFL team, (follows convention: nyj, sea, mia, etc.) MUST BE LOWERCASE
-       "mode": "Win Now", // (optional) 'Win Now', 'Dynasty', or 'Rebuild' (anything else and you will need to add a new png to /static/ similar to the 'Rebuild.png' and 'Win Now.png' currently in there)
-       "rival": {
-         name: "AJ", // Can be anything (usually your rival's name)
-         link: 7, // manager array number within this array, or null to link back to all managers page
-         image: "/managers/File 13.jpeg", // either a specific manager photo or '/managers/everyone.png' or '/managers/question.png'
-       },
-       "favoritePlayer": 1362, // (optional) this corresponds to the Sleeper player ID (https://api.sleeper.app/v1/players/nfl)
-       "valuePosition": "WR", // (optional) Favorite position (QB, WR, RB, TE, etc.)
-       "rookieOrVets": "Vets", // (optional) 'Rookies' or 'Vets' (anything else and you will need to add a new png to /static/ similar to the 'Rookies.png' and 'Vets.png' currently in there)
-       "philosophy": "Your fantasy team's philosophy",
-       "tradingScale": 10, // 1 - 10
-       "preferredContact": "Text", // 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
-     },
-
-    // Robbie
-  {
-       "roster": 10,  // ID of the roster that the manager manages (look at the order of the power rankings graph)
-       "managerID": "999118080758464512", 
-       "name": "Robbie",
-       "tookOver": null, // (optional) used if a manager took over a team, delete this line or change to null otherwise
-       "location": "Rutgas, NJ", // (optional)
-       "bio": "Lorem ipsum...",
-       "photo": "/managers/File 76.jpeg", // square ratio recommended (no larger than 500x500)
-       "fantasyStart": 2015, // (optional) when did the manager start playing fantasy football
-       "favoriteTeam": "nyg", // (optional) favorite NFL team, (follows convention: nyj, sea, mia, etc.) MUST BE LOWERCASE
-       "mode": "Win Now", // (optional) 'Win Now', 'Dynasty', or 'Rebuild' (anything else and you will need to add a new png to /static/ similar to the 'Rebuild.png' and 'Win Now.png' currently in there)
-       "rival": {
-         name: "Matt", // Can be anything (usually your rival's name)
-         link: 6, // manager array number within this array, or null to link back to all managers page
-         image: "/managers/File 30.jpeg", // either a specific manager photo or '/managers/everyone.png' or '/managers/question.png'
        },
        "favoritePlayer": 4805, // (optional) this corresponds to the Sleeper player ID (https://api.sleeper.app/v1/players/nfl)
        "valuePosition": "WR", // (optional) Favorite position (QB, WR, RB, TE, etc.)
